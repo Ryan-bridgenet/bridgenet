@@ -8,6 +8,13 @@ import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
 import { AccountComponent } from './account/account.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {MatDividerModule} from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { ServiceListComponent } from './service-list/service-list.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -17,13 +24,21 @@ import { NavbarComponent } from './navbar/navbar.component';
     AboutComponent,
     ServiceComponent,
     AccountComponent,
-    NavbarComponent
+    NavbarComponent,
+    ServiceListComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDividerModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
