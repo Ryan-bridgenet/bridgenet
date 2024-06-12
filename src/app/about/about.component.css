@@ -23,4 +23,30 @@
     width: 40px;
     height: 40px;
   }
-  
+
+  h1 {
+    color:white;
+    font-size:55px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-box {
+    background-color: white;
+    width: fit-content;
+    height: auto;
+    font-size: 125%;
+    display: vertical;
+    
+    justify-content: center;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 25px;
+  }
+
+  p {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width :auto
+  }
