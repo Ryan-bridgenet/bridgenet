@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { ServiceListComponent } from './service-list/service-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
     AccountComponent,
     NavbarComponent,
     ServiceListComponent,
+    FooterComponent,
 
   ],
   imports: [

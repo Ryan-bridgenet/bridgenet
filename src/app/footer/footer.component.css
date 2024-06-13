@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: left;
+  background-color: white;
+  height: 350px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+img {
+    padding-top: 20px;
+}
+
+h2 {
+    position: absolute;
+    padding-top: 20px;
+}
+
+.future-container {
+  justify-content: center;
+  width: 25%;
+  height: 100%;
+}
+
+.compliance-container {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.quick-links-container {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.get-in-touch-container {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.list-div {
+    padding-top: 80px;
+}
+
