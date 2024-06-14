@@ -7,11 +7,11 @@
         <h2>Compliance</h2>
         <div class="list-div">
             <mat-action-list>
-                <button mat-list-item (click)=null>Do Not Sell My Info</button>
-                <button mat-list-item (click)=null>Equal Oppurtunity Employer</button>
-                <button mat-list-item (click)=null>Non-Discrimination Statement</button>
-                <button mat-list-item (click)=null>Privacy Policy</button>
-                <button mat-list-item (click)=null>Terms of Use</button>
+                <button mat-list-item [routerLink]="'do-not-sell-my-info'">Do Not Sell My Info</button>
+                <button mat-list-item [routerLink]="'equal-oppurtunity'">Equal Oppurtunity Employer</button>
+                <button mat-list-item [routerLink]="'non-discrimination'">Non-Discrimination Statement</button>
+                <button mat-list-item [routerLink]="'privacy-policy'">Privacy Policy</button>
+                <button mat-list-item [routerLink]="'terms-of-use'">Terms of Use</button>
             </mat-action-list>
         </div>              
     </div>
