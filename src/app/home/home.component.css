@@ -1,23 +1,4 @@
-.header-top {
-  background-color: #120463;
-  color: white;
 
-  padding: 10px;
-  text-align: center;
-}
-
-.phone-icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-}
-
-.phone-number {
-  text-align: center;
-
-  margin: 10px;
-  font-size: 1.2em;
-}
 
 nav {
   background-color: #333;
