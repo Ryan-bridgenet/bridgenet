@@ -1,0 +1,53 @@
+.phone-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  
+  .phone-number {
+    text-align: center;
+  
+    margin: 10px;
+    font-size: 1.2em;
+  }
+  
+  .header-top {
+    background-color: #120463;
+    color: white;
+  
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    color:white;
+    font-size:55px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-box {
+    background-color: white;
+    width: fit-content;
+    height: auto;
+    font-size: 125%;
+    display: vertical;
+    
+    justify-content: center;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 25px;
+    margin-bottom: 200px;
+  }
+
+  p {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width :auto
+  }
