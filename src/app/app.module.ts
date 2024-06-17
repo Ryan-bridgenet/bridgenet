@@ -25,6 +25,8 @@ import { HeaderComponent } from './header/header.component';
 import { FaqComponent } from './quick-links/faq/faq.component';
 import { JobsComponent } from './quick-links/jobs/jobs.component';
 import { ContractorsComponent } from './quick-links/contractors/contractors.component';
+import { MatExpansionModule,  } from '@angular/material/expansion';
+
 
 
 @NgModule({
@@ -56,7 +58,9 @@ import { ContractorsComponent } from './quick-links/contractors/contractors.comp
     MatDividerModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule, 
+    MatExpansionModule,
+    
   ],
   providers: [
     provideAnimationsAsync()
