@@ -20,6 +20,13 @@ import { NonDiscriminationComponent } from './compliance/non-discrimination/non-
 import { TermsOfUseComponent } from './compliance/terms-of-use/terms-of-use.component';
 import { DoNotSellMyInfoComponent } from './compliance/do-not-sell-my-info/do-not-sell-my-info.component';
 import { PrivacyPolicyComponent } from './compliance/privacy-policy/privacy-policy.component';
+import { WhyFiberComponent } from './quick-links/why-fiber/why-fiber.component';
+import { HeaderComponent } from './header/header.component';
+import { FaqComponent } from './quick-links/faq/faq.component';
+import { JobsComponent } from './quick-links/jobs/jobs.component';
+import { ContractorsComponent } from './quick-links/contractors/contractors.component';
+import { MatExpansionModule,  } from '@angular/material/expansion';
+
 
 
 @NgModule({
@@ -38,6 +45,11 @@ import { PrivacyPolicyComponent } from './compliance/privacy-policy/privacy-poli
     TermsOfUseComponent,
     DoNotSellMyInfoComponent,
     PrivacyPolicyComponent,
+    WhyFiberComponent,
+    HeaderComponent,
+    FaqComponent,
+    JobsComponent,
+    ContractorsComponent,
 
   ],
   imports: [
@@ -46,7 +58,9 @@ import { PrivacyPolicyComponent } from './compliance/privacy-policy/privacy-poli
     MatDividerModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule, 
+    MatExpansionModule,
+    
   ],
   providers: [
     provideAnimationsAsync()
