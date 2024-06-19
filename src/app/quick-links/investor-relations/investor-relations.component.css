@@ -37,8 +37,6 @@ h1 {
   width: fit-content;
   font-size: 125%;
   display: vertical;
-
-
   justify-content: center;
   border-radius: 25px;
   margin: 50px;
@@ -47,8 +45,8 @@ h1 {
 }
 
 p {
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
   display: flex;
   width: auto;
 }
