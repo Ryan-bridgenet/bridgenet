@@ -27,6 +27,7 @@ import { JobsComponent } from './quick-links/jobs/jobs.component';
 import { MatExpansionModule,  } from '@angular/material/expansion';
 import { FormsModule, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ContractorsComponent } from './quick-links/contractors/contractors.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -61,7 +62,8 @@ import { ContractorsComponent } from './quick-links/contractors/contractors.comp
     MatButtonModule,
     MatIconModule, 
     MatExpansionModule,
-    ReactiveFormsModule,     
+    ReactiveFormsModule,
+    HttpClientModule,     
     
   ],
   providers: [

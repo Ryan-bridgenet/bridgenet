@@ -54,5 +54,5 @@ export class ContractorsComponent implements OnInit{
     return this.contractorsForm.get('options') as FormArray;
   }
 
-  
+
 }
