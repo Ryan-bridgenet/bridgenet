@@ -1,1 +1,139 @@
-<p>contractors works!</p>
+<h1>Contractor Interest</h1>
+<div class="container">
+    <form [formGroup]="contractorsForm" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input id="companyName" formControlName="companyName" class="form-control" />
+            <div *ngIf="contractorsForm.get('companyName')?.invalid && contractorsForm.get('companyName')?.touched"
+                class="text-danger">
+                Company name is required.
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="companyContact">Contact Name</label>
+            <input id="companyContact" formControlName="companyContact" class="form-control" />
+            <div *ngIf="contractorsForm.get('companyContact')?.invalid && contractorsForm.get('companyContact')?.touched"
+                class="text-danger">
+                Contact name is required.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="contactEmail">Contact Email</label>
+            <input id="contactEmail" formControlName="contactEmail" class="form-control" />
+            <div *ngIf="contractorsForm.get('contactEmail')?.invalid && contractorsForm.get('contactEmail')?.touched"
+                class="text-danger">
+                Enter a valid email.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="contactPhone">Contact Phone</label>
+            <input id="contactPhone" formControlName="contactPhone" class="form-control" />
+            <div *ngIf="contractorsForm.get('contactPhone')?.invalid && contractorsForm.get('contactPhone')?.touched"
+                class="text-danger">
+                Enter a valid phone number.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="services">Services Offered</label>
+            <div class="form-check">
+                <input type="checkbox" id="option1" value="Boring" (change)="onCheckboxChange($event)"
+                    class="form-check-input" />
+                <label for="option1" class="form-check-label">Boring</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="option2" value="Missle" (change)="onCheckboxChange($event)"
+                    class="form-check-input" />
+                <label for="option2" class="form-check-label">Missle</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="option3" value="Plow" (change)="onCheckboxChange($event)"
+                    class="form-check-input" />
+                <label for="option3" class="form-check-label">Plow</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="option4" value="Fiber Jetting" (change)="onCheckboxChange($event)"
+                    class="form-check-input" />
+                <label for="option4" class="form-check-label">Fiber Jetting</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="option5" value="Drops" (change)="onCheckboxChange($event)"
+                    class="form-check-input" />
+                <label for="option5" class="form-check-label">Drops</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="option6" value="Installs" (change)="onCheckboxChange($event)"
+                    class="form-check-input" />
+                <label for="option6" class="form-check-label">Installs</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="option7" value="Splicing" (change)="onCheckboxChange($event)"
+                    class="form-check-input" />
+                <label for="option7" class="form-check-label">Splicing</label>
+            </div>
+            <div *ngIf="contractorsForm.get('services')?.invalid && contractorsForm.get('services')?.touched"
+                class="text-danger">
+                At least one option is required.
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="crewsAvailable">Crews Available</label>
+            <input id="number" formControlName="crewsAvailable" class="form-control" />
+            <div *ngIf="contractorsForm.get('crewsAvailable')?.invalid && contractorsForm.get('crewsAvailable')?.touched"
+                class="text-danger">
+                Please spesify the number of crews available.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="dateAvailable">Date Available</label>
+            <input type="date" id="dateAvailable" formControlName="dateAvailable" class="form-control" />
+            <div *ngIf="contractorsForm.get('dateAvailable')?.invalid && contractorsForm.get('dateAvailable')?.touched"
+                class="text-danger">
+                Date Available is required.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="companyStructure">Company Structure</label>
+            <select id="companyStructure" formControlName="companyStructure" class="form-control">
+                <option value="" disabled>Select an option</option>
+                <option *ngFor="let option of drop1" [value]="option">{{ option }}</option>
+            </select>
+            <div *ngIf="contractorsForm.get('companyStructure')?.invalid && contractorsForm.get('companyStructure')?.touched"
+                class="text-danger">
+                Selecting an option is required.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="WBEDBE">Are you a WBE/DBE?</label>
+            <select id="WBEDBE" formControlName="WBEDBE" class="form-control">
+                <option value="" disabled>Select an option</option>
+                <option *ngFor="let option of drop2" [value]="option">{{ option }}</option>
+            </select>
+            <div *ngIf="contractorsForm.get('WBEDBE')?.invalid && contractorsForm.get('WBEDBE')?.touched"
+                class="text-danger">
+                Selecting an option is required.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="aboutCompany">Tell Us About Yourself</label>
+            <textarea id="aboutCompany" formControlName="aboutCompany" class="form-control"></textarea>
+            <div *ngIf="contractorsForm.get('aboutCompany')?.invalid && contractorsForm.get('aboutCompany')?.touched"
+                class="text-danger">
+                Please tell us about yourself
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="contractorsForm.invalid">Submit</button>
+    </form>
+</div>
