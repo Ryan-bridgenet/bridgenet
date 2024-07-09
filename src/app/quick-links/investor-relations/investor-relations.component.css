@@ -1,0 +1,52 @@
+h1 {
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .our-network-box {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    font-size: 125%;
+    float: right;
+  
+    justify-content: center;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .history-box {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    font-size: 125%;
+    float: left;
+  
+    justify-content: center;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .details-box {
+    background-color: white;
+    width: fit-content;
+    font-size: 125%;
+    display: vertical;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 25px;
+    margin-bottom: 200px;
+  }
+  
+  p {
+    justify-content: left;
+    text-align: left;
+    display: flex;
+    width: auto;
+  }
