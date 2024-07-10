@@ -1,49 +1,60 @@
+/* Container styles */
 .container {
-  display: flex;
-  justify-content: left;
-  background-color: white;
-  height: 350px;
-  width: 100%;
-  margin-top: 10px;
-}
-
-img {
+    display: flex;
+    justify-content: flex-start; /* Use 'flex-start' instead of 'left' */
+    background-color: white;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    position: relative; /* To handle absolute positioning of h2 */
+    flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+  }
+  
+  /* Image styles */
+  img {
     padding-top: 20px;
-}
-
-h2 {
-    position: absolute;
+  }
+  
+  /* Heading styles */
+  h2 {
     padding-top: 20px;
-}
-
-.future-container {
-  justify-content: center;
-  width: 25%;
-  height: 100%;
-}
-
-.compliance-container {
+  }
+  
+  /* Section container styles */
+  .section-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align items */
+    justify-content: flex-start; /* Align items to the start */
     width: 25%;
     height: 100%;
-}
-
-.quick-links-container {
-    display: flex;
-    justify-content: center;
-    width: 25%;
-    height: 100%;
-}
-
-.get-in-touch-container {
-    display: flex;
-    justify-content: center;
-    width: 25%;
-    height: 100%;
-}
-
-.list-div {
-    padding-top: 80px;
-}
-
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width and height */
+  }
+  
+  /* List styles */
+  .list-div {
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .section-container {
+      width: 33.33%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .section-container {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .section-container {
+      width: 100%;
+    }
+  }
+  

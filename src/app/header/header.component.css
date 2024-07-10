@@ -1,24 +1,48 @@
+/* Header styles */
+.header-top {
+  background-color: #120463;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Phone icon styles */
 .phone-icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-  }
-  
-  .phone-number {
-    text-align: center;
-  
-    margin: 10px;
-    font-size: 1.2em;
-  }
-  
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* Phone number styles */
+.phone-number {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+/* Navbar styles */
+nav ul li img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
   .header-top {
-    background-color: #120463;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    padding: 5px;
   }
-  
+
+  .phone-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .phone-number {
+    font-size: 1em;
+  }
+
   nav ul li img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
+}
