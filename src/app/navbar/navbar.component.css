@@ -2,14 +2,14 @@
 nav {
   position: relative;
   height: auto;
-  background: linear-gradient(135deg, #00008B, #00BFFF);
+  background: linear-gradient(135deg, #ea8831, #0037ff);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
   align-items: center;
   color: #fff;
   text-align: center;
   padding: 10px;
-  margin-botton: 0;
+  margin-bottom: 0;
 
 }
 
@@ -47,11 +47,12 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #555;
   padding: 0 10px; /* Ensure hover effect maintains padding */
+  border-radius: 10px;
 }
 
 nav ul li img {
-  width: 112px; /* Adjust the size as needed */
-  height: 36px; /* Adjust the size as needed */
+  width: 80px; /* Adjust the size as needed */
+  height: 80px; /* Adjust the size as needed */
 }
 
 /* Media Queries */
