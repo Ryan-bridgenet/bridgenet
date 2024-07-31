@@ -2,7 +2,7 @@
 nav {
   position: relative;
   height: auto;
-  background: linear-gradient(135deg, #ea8831, #0037ff);
+  background: linear-gradient(135deg, #ea8831, #d86e04);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
   align-items: center;
@@ -27,21 +27,24 @@ nav {
 
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 0px;
   margin: 0;
   display: flex;
   justify-content: space-around;
   width: 100%;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Adjust font size as needed */
 }
 
 nav ul li {
   display: inline;
+
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 0 10px; /* Adjust padding as needed */
+  padding: 0px 10px;
 }
 
 nav ul li a:hover {
