@@ -49,7 +49,7 @@ nav ul li img {
   text-align: center;
   margin: 0px;
 
-  
+
 }
 
 @keyframes gradientAnimation {
@@ -181,7 +181,7 @@ nav ul li img {
 .service-list {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .service-item {
